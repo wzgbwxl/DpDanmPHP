@@ -1,7 +1,6 @@
 <?php
 header( "Access-Control-Allow-Origin:*" );
 header( 'Access-Control-Allow-Headers:x-requested-with,content-type' );
-
 $dir = 'json/';
 if ( !is_dir( $dir ) ) {
     mkdir( $dir, 0777 );
@@ -45,5 +44,4 @@ if ( isset( $_GET[ 'id' ] ) ) {
     }
 } else {
     echo '{"code": 0,"data": []}';
-
 }
